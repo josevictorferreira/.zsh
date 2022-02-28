@@ -22,9 +22,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-source $HOME/.scripts/aliases.zsh
-source $HOME/.scripts/functions.zsh
-source $HOME/.scripts/secrets.zsh
+source $HOME/.zsh/aliases.zsh
+source $HOME/.zsh/functions.zsh
+source $HOME/.zsh/secrets.zsh
 
 # Add asdf
 . /opt/asdf-vm/asdf.sh
@@ -32,6 +32,6 @@ source $HOME/.scripts/secrets.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-compdef __start_kubectl k
-
 source <(kubectl completion zsh)
+
+compdef __start_kubectl k

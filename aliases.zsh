@@ -10,5 +10,5 @@ alias vim=nvim
 alias wspc="cd $WORKSPACE"
 alias todo="nvim $WORKSPACE/todo.wiki"
 alias plan="nvim $WORKSPACE/plan.wiki"
-alias zshrc="nvim $HOME/.zshrc"
-alias aliases="nvim $HOME/.aliases.zsh"
+alias zshrc="nvim $HOME/.zsh/.zshrc"
+alias aliases="nvim $HOME/.zsh/aliases.zsh"
