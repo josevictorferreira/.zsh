@@ -5,6 +5,8 @@ alias k=kubectl
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
+alias dc=docker-compose
+alias d=docker
 
 # Personal
 alias wspc="cd $WORKSPACE"
