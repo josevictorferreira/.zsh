@@ -5,7 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export EDITOR="$HOME/.asdf/shims/nvim"
+export EDITOR='vim'
+export VISUAL='vim'
 
 export PATH=$HOME/.cache/rebar3/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
@@ -35,3 +36,5 @@ source $HOME/.zsh/secrets.zsh
 source <(kubectl completion zsh)
 
 compdef __start_kubectl k
+
+bindkey -v
