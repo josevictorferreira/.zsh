@@ -7,6 +7,9 @@ alias vi=nvim
 alias vim=nvim
 alias dc=docker-compose
 alias d=docker
+alias ls="ls -slap --color=auto"
+
+alias be="bundle exec rspec"
 
 # Personal
 alias wspc="cd $WORKSPACE"
