@@ -11,7 +11,6 @@ export VISUAL='nvim'
 export PATH=$HOME/.cache/rebar3/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 source $HOME/.cargo/env
-export NODE_OPTIONS=--openssl-legacy-provider
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
