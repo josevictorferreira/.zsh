@@ -3,11 +3,10 @@ WORKSPACE="$HOME/Workspace"
 # General Applications
 alias k=kubectl
 alias v=nvim
-alias vi=nvim
-alias vim=nvim
 alias dc=docker-compose
 alias d=docker
 alias ls="ls -slap --color=auto --group-directories-first"
+alias be="bundle exec "
 
 alias be="bundle exec rspec"
 
