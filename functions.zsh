@@ -9,6 +9,10 @@ function b64() {
   echo -n "$1" | base64 -w 0 | xclip -sel clip
 }
 
+function bb64() {
+  echo -n "$1" | base64
+}
+
 ## Automatically updates neovim
 function update_neovim() {
   asdf plugin update neovim && asdf uninstall neovim nightly && asdf install neovim nightly
