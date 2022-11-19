@@ -18,3 +18,7 @@ alias zshrc="nvim $HOME/.zsh/.zshrc"
 alias aliases="nvim $HOME/.zsh/aliases.zsh"
 alias exer="cd $WORKSPACE/exercism"
 alias vigi="cd $WORKSPACE/vigilant-journey"
+
+# K8s
+alias prod="click -n production"
+alias stag="click -n staging"
