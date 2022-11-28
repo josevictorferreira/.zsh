@@ -19,6 +19,8 @@ alias aliases="nvim $HOME/.zsh/aliases.zsh"
 alias exer="cd $WORKSPACE/exercism"
 alias vigi="cd $WORKSPACE/vigilant-journey"
 
+alias cheat="nvim $WORKSPACE/cheat_sheets/linux.md"
+
 # K8s
 alias prod="click -n production"
 alias stag="click -n staging"
