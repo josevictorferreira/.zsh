@@ -9,6 +9,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 export PATH=$HOME/.cache/rebar3/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 #source $HOME/.cargo/env
 
@@ -27,7 +28,7 @@ source $HOME/.zsh/functions.zsh
 source $HOME/.zsh/secrets.zsh
 
 # Add asdf
-#. /opt/asdf-vm/asdf.sh
+. /opt/asdf-vm/asdf.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

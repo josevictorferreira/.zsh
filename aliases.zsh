@@ -5,7 +5,7 @@ alias k=kubectl
 alias v=nvim
 alias dc=docker-compose
 alias d=docker
-#alias ls="ls -slap --color=auto --group-directories-first"
+alias ls="ls -slap --color=auto --group-directories-first"
 alias be="bundle exec "
 
 alias be="bundle exec rspec"
