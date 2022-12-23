@@ -24,3 +24,6 @@ alias cheat="nvim $WORKSPACE/cheat_sheets/linux.md"
 # K8s
 alias prod="click -n production"
 alias stag="click -n staging"
+
+alias set_mini="kubectl config use-context minikube && \
+  kubectl config set-context minikube"
