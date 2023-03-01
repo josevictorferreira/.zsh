@@ -18,6 +18,7 @@ alias zshrc="nvim $HOME/.zsh/.zshrc"
 alias aliases="nvim $HOME/.zsh/aliases.zsh"
 alias exer="cd $WORKSPACE/exercism"
 alias vigi="cd $WORKSPACE/vigilant-journey"
+alias readm="cd $WORKSPACE/readmore"
 
 alias cheat="nvim $WORKSPACE/cheat_sheets/linux.md"
 
