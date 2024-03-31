@@ -46,6 +46,7 @@ bindkey -v
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export LD_PRELOAD=/usr/lib/libjemalloc.so.2
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

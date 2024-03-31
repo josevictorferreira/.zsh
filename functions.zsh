@@ -10,7 +10,7 @@ function b64() {
 }
 
 function bb64() {
-  echo -n "$1" | base64
+  echo -n "$1" | base64 -d
 }
 
 ## Automatically updates neovim
