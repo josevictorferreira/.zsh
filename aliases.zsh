@@ -18,8 +18,9 @@ alias ber="bundle exec rspec "
 
 # Personal
 alias wspc="cd $WORKSPACE"
-alias todo="nvim $WORKSPACE/todo.md"
 alias ideas="nvim $NOTETAKING_FOLDER/ideas/Ideas.md"
+alias todo="nvim $NOTETAKING_FOLDER/checklists/Todo.md"
+alias notes="nvim $NOTETAKING_FOLDER/notes/Notes.md"
 
 alias plan="nvim $WORKSPACE/plan.md"
 alias buy="nvim $WORKSPACE/buy.md"

@@ -17,3 +17,15 @@ function bb64() {
 function update_neovim() {
   asdf plugin update neovim && asdf uninstall neovim nightly && asdf install neovim nightly
 }
+
+## Switch kubernetes contexts
+function ksc() {
+  contexts=$(kubectl config get-contexts -o name)
+  selected_context=$(echo "${contexts}" | fzf)
+
+  if [ -n "$selected_context" ]; then
+    kubectl config use-context "$selected_context"
+  else
+    echo "No context selected."
+  fi
+}
