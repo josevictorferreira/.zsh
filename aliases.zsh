@@ -13,6 +13,7 @@ alias dc=docker-compose
 alias d=docker
 alias be="bundle exec "
 alias m="make "
+alias ls='ls --color'
 
 alias ber="bundle exec rspec "
 
@@ -30,6 +31,7 @@ alias exer="cd $WORKSPACE/exercism"
 alias readm="cd $WORKSPACE/readmore-project"
 alias rinha="cd $WORKSPACE/rinha-backend"
 alias hs="cd $WORKSPACE/homeserver"
+alias vista="cd $WORKSPACE/vista-valor"
 
 # K8s
 alias prod="click -n production"
