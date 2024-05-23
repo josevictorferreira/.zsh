@@ -14,6 +14,7 @@ bindkey '^P' history-substring-search-up
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^N' history-substring-search-down
+bindkey '^[[A' forward-char
 
 setopt appendhistory
 setopt sharehistory
