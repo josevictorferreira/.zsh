@@ -13,7 +13,9 @@ alias dc=docker-compose
 alias d=docker
 alias be="bundle exec "
 alias m="make "
-alias ls='ls --color'
+alias ls="ls --color "
+
+alias rtmux="tmux source-file ~/.config/tmux/tmux.conf"
 
 alias ber="bundle exec rspec "
 
@@ -27,6 +29,7 @@ alias plan="nvim $WORKSPACE/plan.md"
 alias buy="nvim $WORKSPACE/buy.md"
 alias zshrc="nvim $HOME/.zsh/.zshrc"
 alias aliases="nvim $HOME/.zsh/aliases.zsh"
+alias secrets="nvim $HOME/.zsh/secrets.zsh"
 alias exer="cd $WORKSPACE/exercism"
 alias readm="cd $WORKSPACE/readmore-project"
 alias rinha="cd $WORKSPACE/rinha-backend"
@@ -34,8 +37,8 @@ alias hs="cd $WORKSPACE/homeserver"
 alias vista="cd $WORKSPACE/vista-valor"
 
 # K8s
-alias prod="click -n production"
-alias stag="click -n staging"
+alias prod="k9s -n production"
+alias stag="k9s -n staging"
 
 alias set_mini="kubectl config use-context minikube && \
   kubectl config set-context minikube"
