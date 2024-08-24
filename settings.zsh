@@ -2,6 +2,7 @@
 export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='brave'
+export PATH=/opt/homebrew/bin:$PATH
 
 ## Autocomplete Settings
 HISTSIZE=10000
