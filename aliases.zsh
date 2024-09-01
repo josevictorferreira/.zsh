@@ -36,6 +36,10 @@ alias rinha="cd $WORKSPACE/rinha-backend"
 alias hs="cd $WORKSPACE/homeserver"
 alias vista="cd $WORKSPACE/vista-valor"
 
+alias parufind="paru -Slq | fzf --multi --preview 'paru -Si {}' | xargs -ro paru -S"
+
+alias sysup="paru -Sua"
+
 # K8s
 alias prod="k9s -n production"
 alias stag="k9s -n staging"

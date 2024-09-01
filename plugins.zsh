@@ -6,6 +6,7 @@ zinit ice depth=1
 zinit light romkatv/powerlevel10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
 # Syntax Highlighting
 zinit light zdharma/fast-syntax-highlighting
 
@@ -20,12 +21,17 @@ zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 
 # Snippets
+zinit snippet OMZ::plugins/git/git.plugin.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::aws
 zinit snippet OMZP::asdf
+
+# History Substring Search
+zinit load 'zsh-users/zsh-history-substring-search'
+zinit ice wait atload'_history_substring_search_config'
 
 # Completions cache
 zinit cdreplay -q

@@ -3,6 +3,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='brave'
 export PATH=/opt/homebrew/bin:$PATH
+export GTK_THEME="Kanagawa-Borderless:dark"
 
 ## Autocomplete Settings
 HISTSIZE=10000
@@ -12,9 +13,11 @@ HISTDUP=erase
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey '^P' history-substring-search-up
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
 bindkey '^N' history-substring-search-down
+bindkey '^p' history-beginning-search-backward
+bindkey '^n' history-beginning-search-forward
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 bindkey '^[[A' forward-char
 
 setopt appendhistory
