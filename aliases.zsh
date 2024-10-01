@@ -35,6 +35,7 @@ alias readm="cd $WORKSPACE/readmore-project"
 alias rinha="cd $WORKSPACE/rinha-backend"
 alias hs="cd $WORKSPACE/homeserver"
 alias vista="cd $WORKSPACE/vista-valor"
+alias real="cd $WORKSPACE/realiza-monorepo"
 
 alias parufind="paru -Slq | fzf --multi --preview 'paru -Si {}' | xargs -ro paru -S"
 
