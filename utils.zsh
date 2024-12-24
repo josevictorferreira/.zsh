@@ -1,4 +1,3 @@
-
 ## Automatically creates and runs a phoenix livebook container
 function run_livebook () {
   docker run -p 8080:8080 --pull always -u $(id -u):$(id -g) -v $(pwd):/data livebook/livebook
@@ -28,4 +27,12 @@ function ksc() {
   else
     echo "No context selected."
   fi
+}
+
+
+# Nix OS
+function rebuild() {
+  cd ~/Nix
+  sudo nixos-rebuild switch --flake .#josevictor-nixos
+  cd -
 }

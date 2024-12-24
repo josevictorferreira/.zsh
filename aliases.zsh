@@ -13,7 +13,10 @@ alias dc=docker-compose
 alias d=docker
 alias be="bundle exec "
 alias m="make "
-alias ls="ls --color "
+
+alias ls='eza -a --icons'
+alias ll='eza -al --icons'
+alias lt='eza -a --tree --level=1 --icons'
 
 alias rtmux="tmux source-file ~/.config/tmux/tmux.conf"
 
