@@ -30,19 +30,15 @@ alias notes="nvim $NOTETAKING_FOLDER/notes/Notes.md"
 
 alias plan="nvim $WORKSPACE/plan.md"
 alias buy="nvim $WORKSPACE/buy.md"
-alias zshrc="nvim $HOME/.zsh/.zshrc"
-alias aliases="nvim $HOME/.zsh/aliases.zsh"
-alias secrets="nvim $HOME/.zsh/secrets.zsh"
+alias zshrc="nvim $HOME/.config/zsh/init.zsh"
+alias aliases="nvim $HOME/.config/zsh/aliases.zsh"
+alias secrets="nvim $HOME/.config/zsh/secrets.zsh"
 alias exer="cd $WORKSPACE/exercism"
 alias readm="cd $WORKSPACE/readmore-project"
 alias rinha="cd $WORKSPACE/rinha-backend"
 alias hs="cd $WORKSPACE/homeserver"
 alias vista="cd $WORKSPACE/vista-valor"
 alias real="cd $WORKSPACE/realiza-monorepo"
-
-alias parufind="paru -Slq | fzf --multi --preview 'paru -Si {}' | xargs -ro paru -S"
-
-alias sysup="paru -Sua"
 
 # K8s
 alias prod="k9s -n production"
