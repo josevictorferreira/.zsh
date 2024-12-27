@@ -12,11 +12,6 @@ function bb64() {
   echo -n "$1" | base64 -d
 }
 
-## Automatically updates neovim
-function update_neovim() {
-  asdf plugin update neovim && asdf uninstall neovim nightly && asdf install neovim nightly
-}
-
 ## Switch kubernetes contexts
 function ksc() {
   contexts=$(kubectl config get-contexts -o name)
@@ -29,10 +24,9 @@ function ksc() {
   fi
 }
 
-
 # Nix OS
 function rebuild() {
-  cd ~/Nix
+  cd ~/.config/nix/
   sudo nixos-rebuild switch --flake .#josevictor-nixos
   cd -
 }
