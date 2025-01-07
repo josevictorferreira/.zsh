@@ -35,10 +35,13 @@ alias aliases="nvim $HOME/.config/zsh/aliases.zsh"
 alias secrets="nvim $HOME/.config/zsh/secrets.zsh"
 alias exer="cd $WORKSPACE/exercism"
 alias readm="cd $WORKSPACE/readmore-project"
+alias ebook="cd $WORKSPACE/ebookit"
+alias ebookit="cd $WORKSPACE/ebookit/ebookit-extension"
 alias rinha="cd $WORKSPACE/rinha-backend"
 alias hs="cd $WORKSPACE/homeserver"
 alias vista="cd $WORKSPACE/vista-valor"
 alias real="cd $WORKSPACE/realiza-monorepo"
+alias nix-shell='nix-shell --run zsh'
 
 # K8s
 alias prod="k9s -n production"
