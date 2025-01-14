@@ -43,6 +43,8 @@ alias vista="cd $WORKSPACE/vista-valor"
 alias real="cd $WORKSPACE/realiza-monorepo"
 alias nix-shell='nix-shell --run zsh'
 
+alias docker-compose='podman-compose'
+
 # K8s
 alias prod="k9s -n production"
 alias stag="k9s -n staging"
