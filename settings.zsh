@@ -3,7 +3,8 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='brave'
 export PATH=/opt/homebrew/bin:$PATH
-export GTK_THEME="Kanagawa-Borderless:dark"
+export PODMAN_COLOR=true
+export COLORTERM=truecolor
 
 ## Autocomplete Settings
 HISTSIZE=10000
@@ -31,6 +32,7 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:*' popup-min-size 80 12
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1a --color=always $realpath'
 
 eval "$(fzf --zsh)"
