@@ -24,11 +24,11 @@ function ksc() {
   fi
 }
 
-# Nix OS
-function rebuild() {
-  cd ~/.config/nix/
-  sudo nixos-rebuild switch --flake .#josevictor-nixos
-  cd -
+function als() {
+  local cmd=$(alias | sed "s/^alias //" | fzf --ansi --height 20 --preview "echo {}" | awk -F'=' '{print $2}' | tr -d "'")
+  if [[ -n $cmd ]]; then
+    eval "$cmd"
+  fi
 }
 
 # Homeserver SSH Connect Machines/VMs

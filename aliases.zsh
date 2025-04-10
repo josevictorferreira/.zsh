@@ -1,12 +1,12 @@
 WORKSPACE="$HOME/Workspace"
-SHARED_FOLDER="/mnt/shared_storage_1"
+SHARED_FOLDER="$HOME/shared_storage"
 NOTETAKING_FOLDER="$SHARED_FOLDER/notetaking"
 AGROSMART_FOLDER="~/Workspace/agrosmart"
 BOOSTER_AGRO_FOLDER="$AGROSMART_FOLDER/booster/"
 
 # Sudo using environment config
-alias sudo='sudo -E'
-alias s='sudo -E'
+alias sudo='sudo -E '
+alias s='sudo -E '
 
 # General Applications
 alias k=kubectl
@@ -40,7 +40,7 @@ alias readm="cd $WORKSPACE/readmore-project"
 alias ebook="cd $WORKSPACE/ebookit"
 alias ebookit="cd $WORKSPACE/ebookit/ebookit-extension"
 alias rinha="cd $WORKSPACE/rinha-backend"
-alias hs="cd $WORKSPACE/homeserver"
+alias hl="cd $WORKSPACE/homelab"
 alias vista="cd $WORKSPACE/vista-valor"
 alias real="cd $WORKSPACE/realiza-monorepo"
 alias nix-shell='nix-shell --run zsh'
@@ -67,6 +67,7 @@ alias geo="cd $BOOSTER_AGRO_FOLDER/georef-measures-service"
 alias map="cd $BOOSTER_AGRO_FOLDER/weather-map-service"
 alias weat="cd $BOOSTER_AGRO_FOLDER/weather-forecast-service"
 alias inf="cd $BOOSTER_AGRO_FOLDER/booster-infra"
+alias kong="cd $BOOSTER_AGRO_FOLDER/kong-api-gateway"
 
 alias nexapi="cd $AGROSMART_FOLDER/nexus-api-gateway"
 
